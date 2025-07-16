@@ -36,3 +36,5 @@ sns.countplot(y='sex', data=df)
 
 # Show the plot
 plt.show()
+
+

@@ -10,4 +10,3 @@ import seaborn.objects as so
 df = sns.load_dataset("penguins")
 sns.pairplot(df, hue="species")
 
-df.corr()
