@@ -49,3 +49,23 @@ ax.get_xaxis().tick_bottom()
 ax.get_yaxis().tick_left()
 plt.savefig("bp_customized.png")
 plt.show()
+
+'''Box Plot Overview
+A box plot, also called a whisker plot, visually summarizes data values, showing the minimum, first quartile, median, third quartile, and maximum.
+
+Key Pointers:
+Box plot includes a box from the first to the third quartile with a line for the median.
+x-axis represents the data, while the y-axis shows frequency distribution.
+Use matplotlib.pyplot.boxplot() to create box plots in Matplotlib.
+Parameters include data, notch, vert, bootstrap, usermedians, positions, widths, patch_artist, labels, and meanline.
+Data can be provided as a NumPy array, Python list, or tuple.
+Example code generates random data using numpy.random.normal() and plots it.
+
+Customization
+Customizing the box plot involves setting specific attributes:
+
+notch=True for a notched box plot.
+patch_artist=True to fill the boxplot with color.
+vert=False for a horizontal box plot.
+Labels can be set based on data dimensions.
+'''
