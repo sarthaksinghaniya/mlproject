@@ -9,7 +9,6 @@ sns.boxplot(data=data)
 plt.title("Box Plot Example")
 plt.show()
 
-
 '''
  0%        25%         50%         75%       100%
  |---------|===========|===========|----------|
