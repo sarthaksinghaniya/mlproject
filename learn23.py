@@ -19,6 +19,7 @@ plt.xlabel("Passenger Class")
 plt.ylabel("Age")
 plt.show()
 
+
 # ------------------ 🧼 STEP: Handle Missing Age Values ------------------
 # Define a function to fill missing 'age' values based on passenger class (domain assumption)
 def impute_age(column):
