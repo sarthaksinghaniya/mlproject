@@ -71,7 +71,6 @@ print("\n--- Correlation Matrix (Salary Data) ---")
 print(df_salary.corr())
 
 
-
 # --------------------------------------------
 # 📤 OUTPUT EXPLANATION (FOR BEGINNERS / "Ghada")
 # --------------------------------------------
