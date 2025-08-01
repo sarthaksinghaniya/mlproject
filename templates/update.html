@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block title %} HOME {% endblock title %} {% block
+body %}
+
+<!-- Navbar -->
+
+<!-- Todo Form -->
+<div class="container my-4">
+  <h1 class="mb-4">Update Your Todo</h1>
+  <form action="/Update/{{ todo.sno }}" method="POST">
+    {% if csrf_token %}
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    {% endif %}
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input
+        type="text"
+        name="title"
+        class="form-control"
+        id="title"
+        value="{{ todo.title }}"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">Description</label>
+      <input
+        type="text"
+        name="desc"
+        class="form-control"
+        id="desc"
+        value="{{ todo.desc }}"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-outline-dark btn-primary">
+      Update
+    </button>
+  </form>
+</div>
+
+{% endblock body %}
